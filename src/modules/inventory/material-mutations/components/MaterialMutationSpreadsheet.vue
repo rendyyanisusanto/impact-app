@@ -49,12 +49,6 @@ function onCellClick(rowIndex: number, colKey: string) {
   emit('set-active-cell', rowIndex, colKey)
 }
 
-function onCellDblClick(rowIndex: number, colKey: string) {
-  if (colKey === 'kode_bahan' || colKey === 'nama_bahan') {
-    openPickerForRow(rowIndex)
-  }
-}
-
 function onQtyInput(rowIndex: number, event: Event) {
   const target = event.target as HTMLInputElement
   const raw = target.value.trim()

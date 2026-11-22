@@ -139,7 +139,7 @@ async function loadData() {
   try {
     const filterParam = {
       search: filters.search,
-      status: filters.status !== '' ? Number(filters.status) : 'all',
+      status: (filters.status !== '' ? Number(filters.status) : 'all') as number | 'all',
       startDate: filters.startDate || undefined,
       endDate: filters.endDate || undefined
     }

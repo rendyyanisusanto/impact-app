@@ -4,7 +4,6 @@ import CoaKpiCards from '@/modules/accounting/chart-of-accounts/components/CoaKp
 import CoaTreeView from '@/modules/accounting/chart-of-accounts/components/CoaTreeView.vue'
 import CoaTableView from '@/modules/accounting/chart-of-accounts/components/CoaTableView.vue'
 import CoaAccountModal from '@/modules/accounting/chart-of-accounts/components/CoaAccountModal.vue'
-import { coaService } from '@/modules/accounting/chart-of-accounts/services/coa.service'
 import type {
   CoaAccount,
   CoaTreeNodeGroup,

@@ -207,7 +207,7 @@ export class MockMaterialMutationService implements IMaterialMutationService {
           const harga = mat?.harga_satuan || 0
           totalNilaiDimutasi += qty * harga
 
-          const satuan = mat?.satuan_nama || 'UNIT'
+          const satuan = mat?.satuan_pakai_nama || 'UNIT'
           const curr = satuanMap.get(satuan) || 0
           satuanMap.set(satuan, curr + qty)
         }

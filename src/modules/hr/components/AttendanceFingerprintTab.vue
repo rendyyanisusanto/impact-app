@@ -1,5 +1,5 @@
-﻿<script setup lang="ts">
-import { ref, computed, watch } from 'vue'
+<script setup lang="ts">
+import { ref, computed } from 'vue'
 import { attendanceService } from '../services/attendance.service'
 import type {
   FingerprintInspectionItem,
@@ -17,7 +17,6 @@ import {
   FileCheck2,
   FileQuestion,
   AlertTriangle,
-  Database,
   CheckCircle2,
   AlertCircle
 } from 'lucide-vue-next'
@@ -320,7 +319,7 @@ async function handleSyncCompleted(_job: FingerprintSyncJobDto) {
       v-model="isSyncModalOpen"
       :snapshot-id="activeSnapshotId || undefined"
       :target-date="activePreviewDate"
-      mode="single"
+      mode="CUSTOM"
       @sync-completed="handleSyncCompleted"
     />
   </div>

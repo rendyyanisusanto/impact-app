@@ -238,7 +238,7 @@ describe('HR Presensi Sprint 8 — Data Fingerprint Preview & Sync Modal Integra
       // Simulate completion event
       const mockJob: FingerprintSyncJobDto = {
         id: 'job-1',
-        mode: 'single',
+        mode: 'CUSTOM',
         date_from: '2026-11-20',
         date_to: '2026-11-20',
         status: 'SUCCESS',
@@ -270,7 +270,7 @@ describe('HR Presensi Sprint 8 — Data Fingerprint Preview & Sync Modal Integra
     it('2.1. invokes importFingerprintSnapshot when snapshotId prop is provided', async () => {
       const mockJob: FingerprintSyncJobDto = {
         id: 'job-snapshot-123',
-        mode: 'single',
+        mode: 'CUSTOM',
         date_from: '2026-11-20',
         date_to: '2026-11-20',
         status: 'SUCCESS',
