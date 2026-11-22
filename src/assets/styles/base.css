@@ -1,0 +1,190 @@
+/* Global Base Styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Typography Defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+
+p {
+  margin: 0;
+}
+
+/* Tabular Numerals for Financial and Data Tables */
+.tabular-nums,
+table td.text-right {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+/* Focus Visibility Standard */
+:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Form Elements Baseline (Native HTML Baseline) */
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='url'],
+input[type='date'],
+textarea,
+select {
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  line-height: normal;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+input:hover:not(:disabled),
+textarea:hover:not(:disabled),
+select:hover:not(:disabled) {
+  border-color: var(--color-border-strong);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: var(--color-brand-primary);
+  box-shadow: var(--focus-ring);
+  outline: none;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  background-color: var(--color-interactive-disabled);
+  color: var(--color-interactive-disabled-text);
+  border-color: var(--color-interactive-disabled-border);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+input[readonly],
+textarea[readonly] {
+  background-color: var(--color-surface-secondary);
+  cursor: default;
+}
+
+/* Invalid / Error state baseline */
+input[aria-invalid='true'],
+textarea[aria-invalid='true'],
+select[aria-invalid='true'] {
+  border-color: var(--color-danger);
+  background-color: var(--color-danger-bg);
+}
+
+input[aria-invalid='true']:focus-visible,
+textarea[aria-invalid='true']:focus-visible,
+select[aria-invalid='true']:focus-visible {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.25);
+}
+
+/* Native Checkbox and Radio baseline */
+input[type='checkbox'],
+input[type='radio'] {
+  accent-color: var(--color-brand-primary);
+  cursor: pointer;
+}
+
+input[type='checkbox']:disabled,
+input[type='radio']:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Compact Enterprise Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

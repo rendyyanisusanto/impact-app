@@ -1,0 +1,96 @@
+:root {
+  /* 5.1 Brand Colors */
+  --color-brand-primary: #0f766e;
+  --color-brand-primary-hover: #115e59;
+  --color-brand-primary-light: #f0fdfa;
+
+  --color-navbar-bg: #34454f;
+  --color-navbar-text: #f8fafc;
+  --color-navbar-muted: #cbd5e1;
+  --color-navbar-hover: #3e525e;
+
+  /* 5.2 Neutral Colors */
+  --color-background: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f8fafc;
+
+  --color-border: #d9e0e7;
+  --color-border-strong: #cbd5e1;
+
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+
+  /* 5.3 Semantic Colors */
+  --color-success: #16a34a;
+  --color-success-bg: #f0fdf4;
+
+  --color-warning: #d97706;
+  --color-warning-bg: #fffbeb;
+
+  --color-danger: #dc2626;
+  --color-danger-bg: #fef2f2;
+
+  --color-info: #2563eb;
+  --color-info-bg: #eff6ff;
+
+  /* 5.4 Interactive States */
+  --color-interactive-hover: #115e59;
+  --color-interactive-active: #0d6760;
+  --color-interactive-focus: #0f766e;
+  --color-interactive-disabled: #f1f5f9;
+  --color-interactive-disabled-text: #94a3b8;
+  --color-interactive-disabled-border: #e2e8f0;
+  --color-interactive-selected: #f0fdfa;
+  --color-interactive-selected-border: #99f6e4;
+  --color-interactive-invalid: #dc2626;
+  --color-interactive-invalid-bg: #fef2f2;
+
+  /* Focus Ring */
+  --focus-ring-color: rgba(15, 118, 110, 0.35);
+  --focus-ring: 0 0 0 3px var(--focus-ring-color);
+
+  /* 8. Typography Scale */
+  --font-sans:
+    'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs: 12px;
+  --line-height-xs: 18px;
+
+  --font-size-sm: 13px;
+  --line-height-sm: 20px;
+
+  --font-size-base: 14px;
+  --line-height-base: 22px;
+
+  --font-size-lg: 16px;
+  --line-height-lg: 24px;
+
+  --font-size-xl: 20px;
+  --line-height-xl: 28px;
+
+  --font-size-2xl: 24px;
+  --line-height-2xl: 32px;
+
+  --font-size-3xl: 30px;
+  --line-height-3xl: 38px;
+
+  /* 10. Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+
+  /* 11. Shadows */
+  --shadow-subtle: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-dropdown: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-modal: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* 12. Layout Dimensions */
+  --layout-header-height: 44px;
+  --layout-nav-height: 44px;
+  --layout-content-padding: 24px;
+  --layout-card-padding: 20px;
+  --layout-input-height: 38px;
+  --layout-button-height: 38px;
+  --layout-table-row-height: 42px;
+}
