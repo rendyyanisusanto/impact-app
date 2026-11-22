@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  // Tema UI tetap terang & kontras; tidak mengikuti tema OS (varian dark: hanya aktif jika ada class .dark)
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
